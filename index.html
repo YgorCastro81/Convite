@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite</title>
+    
+    <link rel="stylesheet" href="./css/reset.min.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="icone/Y.png" type="image/x-icon">
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <h1> Olá! </h1>
+        </header>
+ 
+        <main class="main">
+            <div class="credit">
+                Amanhã vamos jantar <a href="https://kiansushi.com.br/" target="_blank">Sushi?</a>
+            </div>
+            
+            <div class="buttons-container">
+                <button>
+                    <a href="https://www.google.com/maps/dir//Kian+Sushi+Campo+Grande+-+Estr.+do+Tingui,+48+-+Campo+Grande,+Rio+de+Janeiro+-+RJ,+23075-007/@-22.8838759,-43.6051431,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9be3aae5cf6d9b:0x95a720608b93d47!2m2!1d-43.5639438!2d-22.8839603!3e0?entry=ttu" target="_blank">Sim</a>
+                </button>
+                <button id="no">Não</button>
+            </div>
+        </main>
+    
+        <footer class="footer">
+            <address>
+                Criação e Desenvolvimento: <a href="euygorcastro@gmail.com"  target="_blank">Ygor Castro</a> &copy; 22-06-2024 - <a href="https://www.linkedin.com/in/iamygorcastro/"  target="_blank">YC</a>
+            </address>
+        </footer>
+    </div>
+
+    <script>
+        let button = document.getElementById('no');
+        let height = window.innerHeight - 50;
+        let width = window.innerWidth - 50;
+
+        button.addEventListener('mouseover', function (){
+            button.style.position = "absolute";
+            button.style.top = Math.random() * height + "px";
+            button.style.left = Math.random() * width + "px"; /* Corrigido */
+        })
+    </script>
+    
+</body>
+</html>
